@@ -1,5 +1,5 @@
 # HandWizard
-![logo!](https://github.com/joeseven2/HandWizard/blob/main/images/local.png?raw=true)
+![logo!](https://github.com/joeseven2/HandWizard/blob/437f83eb5922176411a2a3527b0b98e078abd52c/images/logo.png?raw=true)
 HandWizard is a spell casting tool that uses hand gestures to cast spells. Built with [handtrack.js](https://github.com/victordibia/handtrack.js) and inspired by this [codepen](https://codepen.io/jcoulterdesign/pen/wGyNzL), it allows users to control the magic with simple hand movements.
 
 ## Getting Started
