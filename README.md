@@ -6,8 +6,8 @@ To use the tool, simply start the video by clicking the "Toggle Video Control" b
 
 The program has four predefined spells that users can cast:
 
-Open, Closed, Open, Closed
-Point, Closed, Point, Closed
+- Open, Closed, Open, Closed
+- Point, Closed, Point, Closed
 
 ## Features
 User-friendly webpage that displays a live video feed of your hand gestures.
