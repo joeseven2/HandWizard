@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <title>Handtrack.js : A library for prototyping realtime handtracking in the browser.</title>
+    <link rel="stylesheet" href="https://unpkg.com/carbon-components@latest/css/carbon-components.css" />
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous" />
+    <link rel="stylesheet" href="css/wizard.css" />
+    <link rel="stylesheet" href="css/smoke.css" />
+</head>
+
+<body class="bx--body p20">
+    <div class="infordisplay">
+        <div class="toprow">
+            <div class="scorebox iblock">
+                <div class="scorevalue inscore"></div>
+                <div class="scorelabel inscore"></div>
+                <div class="scoreadded inscore"></div>
+            </div>
+            <div class="clear"></div>
+        </div>
+
+        <div class="pausetext">
+            <div>Sound (s)</div>
+            <div>Pause (space bar)</div>
+        </div>
+        <div id="updatenote" class="updatenote mt10">loading model ..</div>
+        <button id="trackbutton" class="bx--btn bx--btn--secondary mt10 trackbutton" type="button" disabled>Toggle Video Control ..</button>
+    </div>
+    <video class="videobox canvasbox" height="300" autoplay="autoplay" id="myvideo"></video>
+
+    <div class="handType">
+        <p id="handopen">Open</p>
+        <p id="handclosed">Closed</p>
+        <p id="handpinch">Pinch</p>
+        <p id="handpoint">Point</p>
+    </div>
+
+    <svg version="1.1" xmlns="http://www.w3.org/2000/svg">
+        <filter id="blur">
+            <fegaussianblur stddeviation="10"></fegaussianblur>
+        </filter>
+    </svg>
+    <div class="h">
+      <div class="c"></div>
+      <div class="c"></div>
+      <div class="c"></div>
+      <div class="c"></div>
+      <div class="c"></div>
+      <div class="c"></div>
+      <div class="c"></div>
+      <div class="c"></div>
+      <div class="c"></div>
+      <div class="c"></div>
+      <div class="c"></div>
+      <div class="c"></div>
+      <div class="c"></div>
+      <div class="c"></div>
+      <div class="c"></div>
+      <div class="c"></div>
+      <div class="c"></div>
+      <div class="c"></div>
+      <div class="c"></div>
+      <div class="c"></div>
+      <div class="c"></div>
+      <div class="c"></div>
+      <div class="c"></div>
+      <div class="c"></div>
+      <div class="c"></div>
+      <div class="c"></div>
+      <div class="c"></div>
+      <div class="c"></div>
+      <div class="c"></div>
+      <div class="c"></div>
+      <div class="c"></div>
+      <div class="c"></div>
+      <div class="c"></div>
+      <div class="c"></div>
+      <div class="c"></div>
+      <div class="c"></div>
+      <div class="c"></div>
+      <div class="c"></div>
+      <div class="c"></div>
+      <div class="c"></div>
+      <div class="c"></div>
+      <div class="c"></div>
+      <div class="c"></div>
+      <div class="c"></div>
+      <div class="c"></div>
+      <div class="c"></div>
+      <div class="c"></div>
+      <div class="c"></div>
+      <div class="c"></div>
+      <div class="c"></div>
+      <div class="c"></div>
+      <div class="c"></div>
+      <div class="c"></div>
+      <div class="c"></div>
+      <div class="c"></div>
+      <div class="c"></div>
+      <div class="c"></div>
+      <div class="c"></div>
+      <div class="c"></div>
+      <div class="c"></div>
+    </div>
+
+    <div class="pauseoverlay">
+      <div class="overlaycenter"></div>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/handtrackjs@latest/dist/handtrack.min.js"></script>
+    <script src="js/refactored.js"></script>
+  </body>
+</html>
